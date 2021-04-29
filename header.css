@@ -14,7 +14,7 @@
 .search {
   border: 1px solid black;
   align-self: center;
-  width: 245px;
+  min-width: 245px;
   margin-right: 15px;
 }
 .header-buttons {
@@ -36,8 +36,7 @@
   width: 24px;
 }
 .header-space {
-  height: 48px;
-  width: 336px;
+  min-width: 336px;
 }
 .profile {
   /* border: 1px solid black; */
