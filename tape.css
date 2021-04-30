@@ -6,7 +6,7 @@
   width: 550px;
 }
 .tape-new-from-you {
-  border: 1px solid black;
+  border: 1px solid #dce1e6;
   border-radius: 4px;
   display: flex;
   height: 52px;
@@ -104,7 +104,7 @@
   background-repeat: no-repeat;
 }
 .tape-story {
-  border: 1px solid black;
+  border: 1px solid #dce1e6;
   border-radius: 4px;
   display: flex;
   flex-direction: column;
@@ -123,29 +123,124 @@
 .tape-story-content {
   /* border: 1px solid black; */
   height: 170px;
-  padding: 17px 0 14px 150ms;
+  padding: 17px 0 14px 20px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.tape-story-content-box {
+  border: 1px solid black;
+  height: 167px;
+  width: 94px;
+  border-radius: 8px;
 }
 .tape-post {
-  border: 1px solid black;
+  border: 1px solid #dce1e6;
   border-radius: 4px;
   display: flex;
   flex-direction: column;
   margin-top: 15px;
 }
 .tape-post-header {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   display: flex;
   height: 50px;
   padding: 15px 20px 0 20px;
 }
-.tape-post-content {
+.tape-post-header-icon {
   border: 1px solid black;
+  border-radius: 50%;
+  /* background-image: url(); */
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 50px;
+}
+.tape-post-header-content {
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  padding-top: 8px;
+  margin-left: 15px;
+  height: 33px;
+  width: 445px;
+}
+.tape-post-header-content-name-and-arrow {
+  display: flex;
+  height: 16px;
+}
+.tape-post-header-content-name-and-arrow-n {
+  font: 13px -apple-system, BlinkMacSystemFont, "Roboto", "Helvetica Neue",
+    Geneva, "Noto Sans Armenian", "Noto Sans Bengali", "Noto Sans Cherokee",
+    "Noto Sans Devanagari", "Noto Sans Ethiopic", "Noto Sans Georgian",
+    "Noto Sans Hebrew", "Noto Sans Kannada", "Noto Sans Khmer", "Noto Sans Lao",
+    "Noto Sans Osmanya", "Noto Sans Tamil", "Noto Sans Telugu", "Noto Sans Thai",
+    sans-serif, arial, Tahoma, verdana;
+}
+.tape-post-header-content-name-and-arrow-a {
+  border: 1px solid black;
+  margin-left: auto;
+  height: 24px;
+  width: 22px;
+  overflow: initial;
+}
+.tape-post-header-content-time {
+  /* border: 1px solid black; */
+  padding-top: 3px;
+  height: 14px;
+  display: flex;
+  color: #626d7a;
+  font: 12.5px -apple-system, BlinkMacSystemFont, "Roboto", "Helvetica Neue",
+    Geneva, "Noto Sans Armenian", "Noto Sans Bengali", "Noto Sans Cherokee",
+    "Noto Sans Devanagari", "Noto Sans Ethiopic", "Noto Sans Georgian",
+    "Noto Sans Hebrew", "Noto Sans Kannada", "Noto Sans Khmer", "Noto Sans Lao",
+    "Noto Sans Osmanya", "Noto Sans Tamil", "Noto Sans Telugu", "Noto Sans Thai",
+    sans-serif, arial, Tahoma, verdana;
+}
+.tape-post-content {
+  /* border: 1px solid black; */
   height: 520px;
   padding: 8px 20px 20px 20px;
 }
 .tape-post-footer {
-  border: 1px solid black;
+  border-top: 1px solid #dce1e6;
   display: flex;
-  height: 48px;
-  padding: 0 20px 0 20px;
+  align-items: center;
+  margin: 0 20px 0 20px;
+  padding: 20px 0 20px 0;
+  height: 24px;
+}
+.tape-post-footer-like {
+  display: flex;
+  align-items: center;
+  margin-left: -3px;
+  padding: 0 3px 0 3px;
+}
+.tape-post-footer-like-icon {
+  background-image: url(data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Ctitle%3Elike_outline_24%3C%2Ftitle%3E%3Cpath%20d%3D%22M0%2C0H24V24H0Z%22%20fill%3D%22none%22%2F%3E%3Cpath%20d%3D%22M17%2C2.9A6.43%2C6.43%2C0%2C0%2C1%2C23.4%2C9.33c0%2C3.57-1.43%2C5.36-7.45%2C10l-2.78%2C2.16a1.9%2C1.9%2C0%2C0%2C1-2.33%2C0L8.05%2C19.37C2%2C14.69.6%2C12.9.6%2C9.33A6.43%2C6.43%2C0%2C0%2C1%2C7%2C2.9a6.46%2C6.46%2C0%2C0%2C1%2C5%2C2.54A6.46%2C6.46%2C0%2C0%2C1%2C17%2C2.9ZM7%2C4.7A4.63%2C4.63%2C0%2C0%2C0%2C2.4%2C9.33c0%2C2.82%2C1.15%2C4.26%2C6.76%2C8.63l2.78%2C2.16a.1.1%2C0%2C0%2C0%2C.12%2C0L14.84%2C18c5.61-4.36%2C6.76-5.8%2C6.76-8.63A4.63%2C4.63%2C0%2C0%2C0%2C17%2C4.7c-1.56%2C0-3%2C.88-4.23%2C2.73L12%2C8.5l-.74-1.07C10%2C5.58%2C8.58%2C4.7%2C7%2C4.7Z%22%20fill%3D%22%23828a99%22%2F%3E%3C%2Fsvg%3E);
+  height: 24px;
+  width: 24px;
+}
+.tape-post-footer-share {
+  display: flex;
+  align-items: center;
+  margin-left: 21px;
+  padding: 0 3px 0 3px;
+}
+.tape-post-footer-share-icon {
+  background-image: url(data:image/svg+xml;charset=utf-8,%3Csvg%20viewBox%3D%220%200%2024%2024%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22m0%200h24v24h-24z%22%20fill%3D%22none%22%2F%3E%3Cpath%20d%3D%22m12.1%207.87v-3.47a1.32%201.32%200%200%201%202.17-1l8.94%207.6a1.32%201.32%200%200%201%20.15%201.86l-.15.15-8.94%207.6a1.32%201.32%200%200%201%20-2.17-1v-3.45c-4.68.11-8%201.09-9.89%202.87a1.15%201.15%200%200%201%20-1.9-1.11c1.53-6.36%205.51-9.76%2011.79-10.05zm1.8-2.42v4.2h-.9c-5.3%200-8.72%202.25-10.39%206.86%202.45-1.45%205.92-2.16%2010.39-2.16h.9v4.2l7.71-6.55z%22%20fill%3D%22%23828a99%22%2F%3E%3C%2Fsvg%3E);
+  height: 24px;
+  width: 24px;
+}
+.tape-post-footer-number {
+  margin-left: 6px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #626d7a;
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Helvetica Neue",
+    Geneva, "Noto Sans Armenian", "Noto Sans Bengali", "Noto Sans Cherokee",
+    "Noto Sans Devanagari", "Noto Sans Ethiopic", "Noto Sans Georgian",
+    "Noto Sans Hebrew", "Noto Sans Kannada", "Noto Sans Khmer", "Noto Sans Lao",
+    "Noto Sans Osmanya", "Noto Sans Tamil", "Noto Sans Telugu", "Noto Sans Thai",
+    sans-serif, arial, Tahoma, verdana;
 }
