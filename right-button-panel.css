@@ -3,6 +3,12 @@
   display: flex;
   flex-direction: column;
   margin-left: 15px;
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Helvetica Neue",
+    Geneva, "Noto Sans Armenian", "Noto Sans Bengali", "Noto Sans Cherokee",
+    "Noto Sans Devanagari", "Noto Sans Ethiopic", "Noto Sans Georgian",
+    "Noto Sans Hebrew", "Noto Sans Kannada", "Noto Sans Khmer", "Noto Sans Lao",
+    "Noto Sans Osmanya", "Noto Sans Tamil", "Noto Sans Telugu", "Noto Sans Thai",
+    sans-serif, arial, Tahoma, verdana;
 }
 .right-panel-content-change {
   border: 1px solid #dce1e6;
@@ -11,13 +17,93 @@
   flex-direction: column;
   padding: 6px 0 6px 0;
   width: 230px;
+  font-size: 13px;
 }
 .right-panel-content-change-button {
   padding: 0 5px 0 20px;
   height: 32px;
-  width: 205px;
+  display: flex;
+  align-items: center;
+  color: #2a5885;
 }
 .rpcc-news-themes {
+  display: flex;
+  flex-direction: column;
 }
 .rpcc-news-themes-button {
+  padding: 0 5px 0 28px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  color: #626d7a;
+  font-size: 12.5px;
+}
+.right-panel-content-change-line {
+  margin: 6px 15px;
+  border-top: 1px solid #dce1e6;
+  width: 200px;
+  align-self: center;
+}
+.right-panel-content-change-fire {
+  border: 1px solid #dce1e6;
+  border-radius: 4px;
+  display: flex;
+  margin-top: 15px;
+  padding: 13px 0;
+  width: 230px;
+}
+.right-panel-content-change-fire-icon {
+  background: url(interesting.png) no-repeat;
+  margin-left: 15px;
+  width: 11px;
+  height: 13px;
+}
+.right-panel-content-change-fire-text {
+  font-size: 12.5px;
+  margin-left: 8px;
+}
+.right-panel-content-change-fire-toggle-button {
+  margin-top: 3px;
+  display: flex;
+  align-items: center;
+}
+.toggle-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  display: flex;
+  width: 29px;
+  height: 9px;
+  margin: 0px;
+  margin-left: 25px;
+  border: 1px solid #bbc1e1;
+  border-radius: 30px;
+  outline: none;
+  cursor: pointer;
+  background-color: #c5d0db;
+}
+.toggle-button::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  border: 1px solid #bbc1e1;
+  left: -3px;
+  top: -4.5px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  transform: translateX(0);
+  background-color: #fff;
+}
+.toggle-button:checked::after {
+  transform: translateX(100%);
+  background-color: #5181b8;
+}
+.toggle-button:checked {
+  background-color: #c5d0db;
+}
+.right-panel-content-change {
+  margin-top: 15px;
+  padding: 0;
 }
